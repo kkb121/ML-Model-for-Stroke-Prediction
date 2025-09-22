@@ -158,9 +158,9 @@ An operational agent that:
   <li>Test performance: AUC 0.9328; Acc 0.85; Prec 0.8889; Rec 0.80; F1 0.8421.</li>
 </ul>
 
-### Programmatic Use
+<h3>Programmatic Use</h3>
 
-```python
+<pre><code class="language-python">
 # After training the GB model and fitting label encoders:
 agent = StrokeRiskAgent(gb_model, label_encoders)
 
@@ -170,6 +170,7 @@ new_patients = pd.read_csv("new_patients.csv")
 predictions = agent.predict(new_patients)
 
 agent.export_results(predictions, filename="risk_report.csv")
+</code></pre>
 
 <hr>
 
