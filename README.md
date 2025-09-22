@@ -159,14 +159,16 @@ An operational agent that:
 </ul>
 
 <h3>Programmatic Use</h3>
-<pre><code># After training the GB model and fitting label encoders:
+```python
+# After training the GB model and fitting label encoders:
 agent = StrokeRiskAgent(gb_model, label_encoders)
 
 # Predict on a new CSV of patients (with TOTCHOL, AGE, SYSBP, DIABP, CIGPDAY, BMI):
-# new_patients = pd.read_csv("new_patients.csv")
-# predictions = agent.predict(new_patients)
-# agent.export_results(predictions, filename="risk_report.csv")
-</code></pre>
+new_patients = pd.read_csv("new_patients.csv")
+
+predictions = agent.predict(new_patients)
+
+agent.export_results(predictions, filename="risk_report.csv")
 
 <hr>
 
