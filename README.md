@@ -158,7 +158,8 @@ An operational agent that:
   <li>Test performance: AUC 0.9328; Acc 0.85; Prec 0.8889; Rec 0.80; F1 0.8421.</li>
 </ul>
 
-<h3>Programmatic Use</h3>
+### Programmatic Use
+
 ```python
 # After training the GB model and fitting label encoders:
 agent = StrokeRiskAgent(gb_model, label_encoders)
