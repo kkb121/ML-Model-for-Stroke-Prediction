@@ -2,8 +2,11 @@
 
 <p>
 This repository contains end-to-end machine learning work across three strands:
+  
 (1) <strong>Unsupervised Learning</strong> with K-Means on a synthetic dataset;
+
 (2) <strong>Dimensionality Reduction</strong> with PCA on housing data; and
+
 (3) a full <strong>Binary Classification</strong> workflow for stroke-risk prediction, including an
 operational <strong>Healthcare AI Agent</strong> that preprocesses new patient records and outputs risk categories.
 </p>
